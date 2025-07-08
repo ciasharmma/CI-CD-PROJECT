@@ -84,7 +84,7 @@ This project automates the end-to-end deployment of a web application using **Je
 When changes are pushed to the GitHub repository, the Jenkins pipeline is automatically triggered using a webhook.
 
 ```bash
-Repository URL: https://github.com/kartikk26/CI-CD_Project.git
+Repository URL: https://github.com/ciasharmma/CI-CD-PROJECT.git
 ```
 
 ---
@@ -108,15 +108,15 @@ cd /root/ansible
 docker build -t $JOB_NAME:$BUILD_ID .
 
 # Tag Image
-docker tag $JOB_NAME:$BUILD_ID aditya220404/$JOB_NAME:$BUILD_ID
-docker tag $JOB_NAME:$BUILD_ID aditya220404/$JOB_NAME:latest
+docker tag $JOB_NAME:$BUILD_ID ciasharmma/$JOB_NAME:$BUILD_ID
+docker tag $JOB_NAME:$BUILD_ID ciasharmma/$JOB_NAME:latest
 
 # Push to Docker Hub
-docker push aditya220404/$JOB_NAME:$BUILD_ID
-docker push aditya220404/$JOB_NAME:latest
+docker push ciasharmma/$JOB_NAME:$BUILD_ID
+docker push ciasharmma/$JOB_NAME:latest
 
 # Clean up Docker Images
-docker rmi -f $JOB_NAME:$BUILD_ID aditya220404/$JOB_NAME:$BUILD_ID aditya220404/$JOB_NAME:latest
+docker rmi -f $JOB_NAME:$BUILD_ID ciasharmma/$JOB_NAME:$BUILD_ID ciasharmma/$JOB_NAME:latest
 ```
 
 ---
@@ -178,7 +178,7 @@ pipeline {
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/adityagirigoswami/CI-CD_Project.git
+git clone https://github.com/ciasharmma/CI-CD-PROJECT.git
 ```
 
 ### 2. Configure Environment Variables
